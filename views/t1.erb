@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	header {
+   		background-color: #5CADFF;
+   		color:white;
+   		text-align:center;
+   		padding:5px;	 
+	}
+	nav {
+   		line-height:30px;
+   		background-color:#3399FF;
+   		height:650px;
+   		width:100px;
+   		float:left;
+   		padding:5px;	      
+	}
+	section {
+   		width:800px;
+   		height: 600px;
+   	 	float:left;
+   		padding:10px;	 	 
+	}
+	footer {
+    	background-color:#a8a8a8;
+    	color:white;
+    	clear:both;
+    	text-align:center;
+    	padding:5px;	 	 
+	}
+	ul#menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	ul#menu li {
+		padding: 3px;
+	}
+	ul#menu a {
+		display: block;
+   		width: 60px;
+    	color: white;
+    	text-decoration: none;
+    	border-radius: 4px 4px 0 0;
+   	}
+	ul#menu a:hover {
+		background-color: #1F5C99;
+	}
+	</style>
+</head>
+
+
+	<body>
+	<header>
+		<h1>Sashibox</h1>
+	</header>
+	<nav>
+	<ul id="menu">
+  	</ul>  
+	</nav>
+
+	<section>
+	   <h1> File uploader!</h1>
+   		 <form method="post" enctype='multipart/form-data'>   
+   	   	<input type='file' name='myfile'>    
+   	   <br>
+   	   <input type='submit' value='Upload!'>
+   	</form>
+		</section>
+
+	<footer>
+	Copyright © Sashiba/Alexander Pirnarev
+	</footer>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<header>
+<h1>Sashibox</h1>
+</header>
+
+<nav>
+	<ul id="menu">
+	<li><a href ="/profile/userid=<%= username %>"><%= @user %></a></li>
+ 	<li><a href="/fmanager/userid=<%= username %>">File Manager</a></li>
+ 	<li><a href = "/logout">Log out</a></li>
+  	</ul>  
+</nav>
+<section>
+	<h1>Welcome</h1>
+	<p>
+	<%= "Welcome #{username}!"%>
+	<%= username %>
+	</p>
+</section>

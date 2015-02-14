@@ -1,0 +1,35 @@
+<header>
+	<h1>Sashibox</h1>
+</header>
+	
+<nav>
+ <ul id="menu">
+ <li><a href="/login">Login</a></li>
+ <li><a href="/signup">Sign up</a></li>
+ </ul>  
+</nav><h1>Sign up</h1>
+	<% if messages != nil%>
+	<% messages.each do |msg| %>
+	<%="#{msg}"%><br>
+	<%end%>
+	<%end%>
+	<br>
+<form action="/signup" method="post">
+	User name:<br>
+	<input type="text" name="userid" value="">
+	<br>
+	User password:<br>
+	<input type="password" name="psw" value="">
+	<br>
+	First name:<br>
+	<input type="text" name="firstname" value="">
+	<br>
+	Last name:<br>
+	<input type="text" name="lastname" value="">
+	<br>
+	E-mail:<br>
+	<input type="text" name="email" value="">
+	<br><br>
+	<input type="submit" value="Sign Up">
+</form>
+

@@ -1,0 +1,22 @@
+<header>
+	<h1>Sashibox</h1>
+</header>
+<nav>
+<ul id="menu">
+	<li><a href ="/profile/userid=<%= username %>"><%= @user %></a></li>
+ 	<li><a href="/fmanager/userid=<%= username %>">File Manager</a></li>
+ 	<li><a href = "/logout">Log out</a></li>
+</ul>  
+</nav>
+
+<section>
+	<h1>File Manager</h1>
+	<div style="border:1px solid black;width:780px;height:520px;overflow:scroll;overflow-y:scroll;overflow-x:hidden;">
+		<ul> 
+ 		 	<% @list.each do |file| %>
+    		<li><a href="/fmanager/userid=<%= username %>/files/file=<%=file%>"><%= file %></a></li>
+  			<% end %>
+		</ul>
+	</div>
+	<a href="/fmanager/userid=<%= username %>/upload">Upload</a><br>
+</section>

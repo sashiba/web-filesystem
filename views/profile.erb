@@ -1,0 +1,30 @@
+<header>
+	<h1>Sashibox</h1>
+</header>
+<nav>
+	<ul id="menu">
+	<li><a href ="/profile/userid=<%= username %>"><%= @user %></a></li>
+ 	<li><a href="/fmanager/userid=<%= username %>">File Manager</a></li>
+ 	<li><a href = "/logout">Log out</a></li>
+  	</ul>  
+</nav>
+
+<section>
+	<h1>Profile</h1>
+	<form action="/profile/userid=<%= username %>" method="post">
+		User name: <%= @user %>
+		<br><br>
+		Name:<%= @name %>
+		<br><br>
+		E-mail:<%= @email %>
+		<br><br>
+		Vip:<%= @vip %>
+		<br><br>
+		Current Password:<br><input type="password" name="psw" value=""><br>
+		New Password:<br><input type="password" name="pswNew" value=""><br>
+		Confirm new password:<br> <input type="password" name="pswNew1" value="">
+		<br><br>
+		<br>
+		<input type="submit" value="Change password">
+	</form>
+</section>

@@ -1,0 +1,2 @@
+require './proekt'
+run MyApp

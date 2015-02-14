@@ -1,0 +1,11 @@
+D, [2015-02-01T14:04:40.330039 #33756] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-02-01T14:04:40.335039 #33756] DEBUG -- :   [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("username", "password", "email", "accdetails", "vip") VALUES (?, ?, ?, ?, ?)  [["username", "sashiba"], ["password", "sasho"], ["email", "sashopirnarev@gmail.com"], ["accdetails", "Alexander Pirnarev"], ["vip", 1]]
+D, [2015-02-01T14:04:40.438045 #33756] DEBUG -- :   [1m[36m (102.0ms)[0m  [1mcommit transaction[0m
+D, [2015-02-01T14:04:44.109255 #33756] DEBUG -- :   [1m[35mUsers Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", ""]]
+D, [2015-02-01T14:04:44.109255 #33756] DEBUG -- :   [1m[36mUsers Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", ""]]
+D, [2015-02-01T14:04:47.653458 #33756] DEBUG -- :   [1m[35mUsers Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "asd"]]
+D, [2015-02-01T14:04:47.654458 #33756] DEBUG -- :   [1m[36mUsers Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "asd"]]
+D, [2015-02-01T14:04:47.682459 #33756] DEBUG -- :   [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "asd"]]
+D, [2015-02-01T14:04:50.909644 #33756] DEBUG -- :   [1m[36mUsers Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "asdasdasdasd"]]
+D, [2015-02-01T14:04:57.542023 #33756] DEBUG -- :   [1m[35mUsers Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", ""]]
+D, [2015-02-01T14:04:57.543023 #33756] DEBUG -- :   [1m[36mUsers Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", ""]]

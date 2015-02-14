@@ -1,0 +1,20 @@
+<header>
+	<h1>Sashibox</h1>
+</header>
+<nav>
+<ul id="menu">
+	<li><a href ="/profile/userid=<%= username %>"><%= @user %></a></li>
+ 	<li><a href="/fmanager/userid=<%= username %>">File Manager</a></li>
+ 	<li><a href = "/logout">Log out</a></li>
+</ul>  
+</nav>
+
+<section>
+	<h1>File Manager</h1> 
+	<h2><%= @idfile %></h2>
+	<a href="/fmanager/userid=<%=username%>/files/file=<%= @idfile %>/download">Download</a><br>
+	<a href="/fmanager/userid=<%=username%>/files/file=<%= @idfile %>/remove">Remove file</a>
+	<br>
+	<a href="/userid=<%= username%>/file=<%= @idfile %>">Make public link</a><br>
+	<a href="/userid=<%= username%>/file=<%= @idfile %>/delete">Delete public link</a>
+</section>

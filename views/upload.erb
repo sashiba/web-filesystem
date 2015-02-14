@@ -1,0 +1,19 @@
+<header>
+	<h1>Sashibox</h1>
+</header>
+<nav>
+	<ul id="menu">
+	<li><a href ="/profile/userid=<%= username %>"><%= @user %></a></li>
+ 	<li><a href="/fmanager/userid=<%= username %>">File Manager</a></li>
+ 	<li><a href = "/logout">Log out</a></li>
+  	</ul>  
+</nav>
+
+<section>
+	<h1> File uploader!</h1>
+   	<form method="post" enctype='multipart/form-data'>   
+   	<input type='file' name='myfile'>    
+   	<br>
+   	<input type='submit' value='Upload!'>
+   	</form>
+</section>
