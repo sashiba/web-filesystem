@@ -6,4 +6,4 @@ Register and upload files from your pc. You can log in and download or delete yo
 used sinatra(needs a lot of rework)
 
 soon remake using rails.
-
+Rails version of the app https://github.com/sashiba/web-file-manager
